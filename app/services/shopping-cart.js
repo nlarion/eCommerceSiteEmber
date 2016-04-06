@@ -10,6 +10,7 @@ export default Ember.Service.extend({
   remove(item) {
     this.get('items').removeObject(item);
   },
+  
   includes(item){
     return this.get('items').includes(item)
   }

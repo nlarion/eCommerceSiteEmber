@@ -3,3 +3,7 @@
   <h4>{{item.title}} - ${{item.cost}}</h4>
   <button {{action 'removeItem' item}}>Remove</button>
 {{/each}}
+
+<p>
+  total cost: ${{calculateTotal}}
+</p>
