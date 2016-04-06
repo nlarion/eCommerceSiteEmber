@@ -5,6 +5,7 @@ export default DS.Model.extend({
   image: DS.attr(),
   description: DS.attr(),
   cost: DS.attr(),
+  ratings: DS.hasMany('rating', { async: true}),
   shoppingCart: Ember.inject.service(),
   inCart: Ember.computed('shoppingCart.items.[]', function(){
     return this.get('shoppingCart').includes(this);

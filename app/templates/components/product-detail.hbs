@@ -1,0 +1,10 @@
+<img src={{product.image}}
+ alt={{product.title}}>
+<p>{{product.description}}</p>
+<p>Cost: ${{product.cost}}</p>
+{{#if product.inCart}}
+  Already in cart!
+{{else}}
+  <button {{action 'addToCart' product}}>Add to Cart</button>
+{{/if}}
+<hr>

@@ -1,11 +1,1 @@
-<h2>{{product.title}}</h2>
-<img src={{product.image}}
- alt={{product.title}}>
-<p>{{product.description}}</p>
-<p>Cost: ${{product.cost}}</p>
-{{#if product.inCart}}
-  Already in cart!
-{{else}}
-  <button {{action 'addToCart' product}}>Add to Cart</button>
-{{/if}}
-<hr>
+{{#link-to 'item' product.id}}<h2>{{product.title}}</h2>{{/link-to}}

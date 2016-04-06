@@ -1,0 +1,16 @@
+{{#if addRating}}
+  <h2>Rating product</h2>
+   <div>
+     <form>
+       <div class="form-group">
+         <label for="stars">Your Rating</label>
+         {{input value=stars id="stars"}}
+       </div>
+
+       <button {{action 'saveRating'}}>Post</button>
+       <button {{action 'formHide'}}>Hide Form</button>
+     </form>
+   </div>
+{{else}}
+  <button {{action 'ratingFormShow'}}>Rate</button>
+{{/if}}

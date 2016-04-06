@@ -1,10 +1,7 @@
-{{#link-to 'index'}}HOME{{/link-to}}
 
 {{#each model as |product|}}
   {{product-tile product=product}}
 {{/each}}
-
-{{new-product saveProduct="saveProduct"}}
 
 <div class="cart">
   {{display-cart }}

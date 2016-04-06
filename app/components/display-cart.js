@@ -4,10 +4,10 @@ export default Ember.Component.extend({
   shoppingCart: Ember.inject.service(),
 
   calculateTotal: Ember.computed('shoppingCart.items.length', function(){
-    var shoppingCart = this.get('shoppingCart');
+    var cart = this.get('shoppingCart');
     var cartSum = 0;
-    for (var i = 0; i < shoppingCart.items.length; i++) {
-      cartSum += parseInt(shoppingCart.items[i].get('cost'));
+    for (var i = 0; i < cart.items.length; i++) {
+      cartSum += parseInt(cart.items[i].get('cost'));
     }
     return cartSum
   }),
