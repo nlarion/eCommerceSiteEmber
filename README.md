@@ -1,7 +1,8 @@
 # E-commerce
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Michael A. Smith and Neil Larion, April 2016
+
+This is an e-commerce site where the user can post items for sale. And the shopper can add items to a cart.
 
 ## Prerequisites
 
@@ -50,4 +51,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
