@@ -1,6 +1,5 @@
 <h2>Your Cart Items: </h2>
 {{#each shoppingCart.items as |item|}}
   <h4>{{item.title}} - ${{item.cost}}</h4>
+  <button {{action 'removeItem' item}}>Remove</button>
 {{/each}}
-
-{{log item.name}}
