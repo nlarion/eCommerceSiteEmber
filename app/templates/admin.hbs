@@ -1,7 +1,9 @@
-{{new-product saveProduct="saveProduct"}}
+{{new-product saveProduct="saveProduct" user=model.users}}
 
 {{new-user saveUser="saveUser"}}
 
+<h3>Users</h3>
+<hr>
 {{#each model.users as |user|}}
   {{user-tile user=user }}
 {{/each}}

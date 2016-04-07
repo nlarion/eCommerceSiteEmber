@@ -14,7 +14,7 @@ export default Ember.Component.extend({
     saveProduct() {
       var params = {
         title: this.get('title'),
-        user: this.get('user'),
+        user: this.get('user').get('firstObject'),
         image: this.get('image') ? this.get('image') : "",
         description: this.get('description'),
         cost: parseInt(this.get('cost'))
