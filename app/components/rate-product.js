@@ -14,7 +14,8 @@ export default Ember.Component.extend({
 
     saveRating() {
       var params = {
-        stars: parseInt(this.get('stars')),
+        stars: this.get('stars'),
+        user: this.get('user'),
         product: this.get('product')
       };
       this.set('addRating', false);

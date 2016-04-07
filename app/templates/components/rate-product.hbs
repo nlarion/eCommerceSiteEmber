@@ -3,8 +3,15 @@
    <div>
      <form>
        <div class="form-group">
-         <label for="stars">Your Rating</label>
-         {{input value=stars id="stars"}}
+         <label for="user">Username: </label>
+         {{input value=user id="user"}}
+       </div>
+
+       <div class="form-group">
+         <label for="stars">Your Review</label>
+         <div>
+           {{textarea class="big" value=stars id="stars"}}
+         </div>
        </div>
 
        <button {{action 'saveRating'}}>Post</button>
@@ -12,5 +19,5 @@
      </form>
    </div>
 {{else}}
-  <button {{action 'ratingFormShow'}}>Rate</button>
+  <button {{action 'ratingFormShow'}}>Review</button>
 {{/if}}

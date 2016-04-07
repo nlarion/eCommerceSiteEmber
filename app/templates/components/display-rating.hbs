@@ -1,6 +1,11 @@
 {{#each rating as |stars|}}
+
   <p>
-    {{log stars.stars}}
-    {{stars.stars}}
+    Posted by: {{stars.user}}
   </p>
+  <p>
+    {{{textFormat stars.stars}}}
+  </p>
+
+  <hr>
 {{/each}}

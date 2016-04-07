@@ -1,6 +1,8 @@
+<h3>{{product.title}}</h3>
 <img src={{product.image}}
  alt={{product.title}}>
 <p>{{product.description}}</p>
+<p>Posted by: {{product.user}}</p>
 <p>Cost: ${{product.cost}}</p>
 {{#if product.inCart}}
   Already in cart!
