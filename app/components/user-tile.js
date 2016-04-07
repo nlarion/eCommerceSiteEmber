@@ -5,8 +5,8 @@ export default Ember.Component.extend({
 
   actions: {
     selectUser(user) {
-      console.log(user);
-      this.get('currentUser').add(user);
+      this.get('currentUser').add(user),
+      this.set('currentUser.selectUser', false);
     }
   }
 });
