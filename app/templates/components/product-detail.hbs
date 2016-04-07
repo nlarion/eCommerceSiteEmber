@@ -2,7 +2,7 @@
 <img src={{product.image}}
  alt={{product.title}}>
 <p>{{product.description}}</p>
-<p>Posted by: {{product.user}}</p>
+<p>Posted by: {{product.user.name}}</p>
 <p>Cost: ${{product.cost}}</p>
 {{#if product.inCart}}
   Already in cart!
